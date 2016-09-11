@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="Chrome"/>
+  <test name="ChromeTest(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.company.pack.MainScripts.Delta">
+        <methods>
+          <include name="AppLaunch"/>
+          <include name="AppLaunch"/>
+          <include name="endFramework"/>
+          <include name="InitFramework"/>
+          <include name="InitFramework"/>
+          <include name="quitApp"/>
+          <include name="quitApp"/>
+          <include name="MultipleLoginActitime" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.company.pack.MainScripts.Delta -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.company.pack.MainScripts.Delta">
+        <methods>
+          <include name="AppLaunch"/>
+          <include name="AppLaunch"/>
+          <include name="endFramework"/>
+          <include name="InitFramework"/>
+          <include name="InitFramework"/>
+          <include name="quitApp"/>
+          <include name="quitApp"/>
+          <include name="MultipleLoginActitime" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.company.pack.MainScripts.Delta -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
