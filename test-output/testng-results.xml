@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="2" failed="2" total="4" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[http://localhost:8080/login.do  :   TimeOut is  :  55]]>
+    </line>
+    <line>
+      <![CDATA[http://localhost:8080/login.do  :   TimeOut is  :  55]]>
+    </line>
+    <line>
+      <![CDATA[enter 'admin' in user name :   enter :   ID_username : admin]]>
+    </line>
+    <line>
+      <![CDATA[enter 'admin' in user name :   enter :   ID_username : admin]]>
+    </line>
+    <line>
+      <![CDATA[http://localhost:8080/login.do  :   TimeOut is  :  55]]>
+    </line>
+    <line>
+      <![CDATA[http://localhost:8080/login.do  :   TimeOut is  :  55]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="26279" started-at="2016-09-11T05:46:16Z" finished-at="2016-09-11T05:46:42Z">
+    <groups>
+    </groups>
+    <test name="ChromeTest" duration-ms="23239" started-at="2016-09-11T05:46:16Z" finished-at="2016-09-11T05:46:39Z">
+      <class name="com.company.pack.MainScripts.Delta">
+        <test-method status="PASS" signature="InitFramework()[pri:0, instance:com.company.pack.MainScripts.Delta@68be2bc2]" name="InitFramework" is-config="true" duration-ms="188" started-at="2016-09-11T11:16:16Z" finished-at="2016-09-11T11:16:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitFramework -->
+        <test-method status="PASS" signature="AppLaunch(org.testng.xml.XmlTest)[pri:0, instance:com.company.pack.MainScripts.Delta@68be2bc2]" name="AppLaunch" is-config="true" duration-ms="5296" started-at="2016-09-11T11:16:17Z" finished-at="2016-09-11T11:16:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Test: "ChromeTest" verbose:1[parameters:browser=>Chrome][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=com.company.pack.MainScripts.Delta]  packages:] ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[http://localhost:8080/login.do  :   TimeOut is  :  55]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AppLaunch -->
+        <test-method status="FAIL" signature="MultipleLoginActitime(java.lang.String, java.lang.String)[pri:0, instance:com.company.pack.MainScripts.Delta@68be2bc2]" name="MultipleLoginActitime" duration-ms="270" started-at="2016-09-11T11:16:22Z" data-provider="getMultipleScenarios" finished-at="2016-09-11T11:16:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LoginScenario_VariousLocators]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at com.company.pack.MainScripts.Delta.MultipleLoginActitime(Delta.java:173)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[enter 'admin' in user name :   enter :   ID_username : admin]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- MultipleLoginActitime -->
+        <test-method status="PASS" signature="quitApp(org.testng.ITestResult)[pri:0, instance:com.company.pack.MainScripts.Delta@68be2bc2]" name="quitApp" is-config="true" duration-ms="5546" started-at="2016-09-11T11:16:22Z" finished-at="2016-09-11T11:16:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MultipleLoginActitime status=FAILURE method=Delta.MultipleLoginActitime(java.lang.String, java.lang.String)[pri:0, instance:com.company.pack.MainScripts.Delta@68be2bc2] output=enter 'admin' in user name :   enter :   ID_username : admin]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitApp -->
+        <test-method status="PASS" signature="AppLaunch(org.testng.xml.XmlTest)[pri:0, instance:com.company.pack.MainScripts.Delta@68be2bc2]" name="AppLaunch" is-config="true" duration-ms="3907" started-at="2016-09-11T11:16:28Z" finished-at="2016-09-11T11:16:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Test: "ChromeTest" verbose:1[parameters:browser=>Chrome][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=com.company.pack.MainScripts.Delta]  packages:] ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[http://localhost:8080/login.do  :   TimeOut is  :  55]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AppLaunch -->
+        <test-method status="SKIP" signature="MultipleLoginActitime(java.lang.String, java.lang.String)[pri:0, instance:com.company.pack.MainScripts.Delta@68be2bc2]" name="MultipleLoginActitime" duration-ms="2" started-at="2016-09-11T11:16:32Z" data-provider="getMultipleScenarios" finished-at="2016-09-11T11:16:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LoginScenario_VariousLocators]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping this scenario]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping this scenario
+	at com.company.pack.MainScripts.Delta.MultipleLoginActitime(Delta.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MultipleLoginActitime -->
+        <test-method status="PASS" signature="quitApp(org.testng.ITestResult)[pri:0, instance:com.company.pack.MainScripts.Delta@68be2bc2]" name="quitApp" is-config="true" duration-ms="7107" started-at="2016-09-11T11:16:32Z" finished-at="2016-09-11T11:16:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MultipleLoginActitime status=SKIP method=Delta.MultipleLoginActitime(java.lang.String, java.lang.String)[pri:0, instance:com.company.pack.MainScripts.Delta@68be2bc2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitApp -->
+        <test-method status="PASS" signature="endFramework()[pri:0, instance:com.company.pack.MainScripts.Delta@68be2bc2]" name="endFramework" is-config="true" duration-ms="229" started-at="2016-09-11T11:16:39Z" finished-at="2016-09-11T11:16:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endFramework -->
+      </class> <!-- com.company.pack.MainScripts.Delta -->
+    </test> <!-- ChromeTest -->
+    <test name="FirefoxTest" duration-ms="26279" started-at="2016-09-11T05:46:16Z" finished-at="2016-09-11T05:46:42Z">
+      <class name="com.company.pack.MainScripts.Delta">
+        <test-method status="PASS" signature="InitFramework()[pri:0, instance:com.company.pack.MainScripts.Delta@6cc4c815]" name="InitFramework" is-config="true" duration-ms="187" started-at="2016-09-11T11:16:16Z" finished-at="2016-09-11T11:16:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitFramework -->
+        <test-method status="PASS" signature="AppLaunch(org.testng.xml.XmlTest)[pri:0, instance:com.company.pack.MainScripts.Delta@6cc4c815]" name="AppLaunch" is-config="true" duration-ms="8065" started-at="2016-09-11T11:16:17Z" finished-at="2016-09-11T11:16:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Test: "FirefoxTest" verbose:1[parameters:browser=>Firefox][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=com.company.pack.MainScripts.Delta]  packages:] ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[http://localhost:8080/login.do  :   TimeOut is  :  55]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AppLaunch -->
+        <test-method status="FAIL" signature="MultipleLoginActitime(java.lang.String, java.lang.String)[pri:0, instance:com.company.pack.MainScripts.Delta@6cc4c815]" name="MultipleLoginActitime" duration-ms="396" started-at="2016-09-11T11:16:25Z" data-provider="getMultipleScenarios" finished-at="2016-09-11T11:16:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LoginScenario_VariousLocators]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at com.company.pack.MainScripts.Delta.MultipleLoginActitime(Delta.java:173)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[enter 'admin' in user name :   enter :   ID_username : admin]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- MultipleLoginActitime -->
+        <test-method status="PASS" signature="quitApp(org.testng.ITestResult)[pri:0, instance:com.company.pack.MainScripts.Delta@6cc4c815]" name="quitApp" is-config="true" duration-ms="5216" started-at="2016-09-11T11:16:25Z" finished-at="2016-09-11T11:16:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MultipleLoginActitime status=FAILURE method=Delta.MultipleLoginActitime(java.lang.String, java.lang.String)[pri:0, instance:com.company.pack.MainScripts.Delta@6cc4c815] output=enter 'admin' in user name :   enter :   ID_username : admin]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitApp -->
+        <test-method status="PASS" signature="AppLaunch(org.testng.xml.XmlTest)[pri:0, instance:com.company.pack.MainScripts.Delta@6cc4c815]" name="AppLaunch" is-config="true" duration-ms="5669" started-at="2016-09-11T11:16:30Z" finished-at="2016-09-11T11:16:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Test: "FirefoxTest" verbose:1[parameters:browser=>Firefox][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=com.company.pack.MainScripts.Delta]  packages:] ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[http://localhost:8080/login.do  :   TimeOut is  :  55]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AppLaunch -->
+        <test-method status="SKIP" signature="MultipleLoginActitime(java.lang.String, java.lang.String)[pri:0, instance:com.company.pack.MainScripts.Delta@6cc4c815]" name="MultipleLoginActitime" duration-ms="1" started-at="2016-09-11T11:16:36Z" data-provider="getMultipleScenarios" finished-at="2016-09-11T11:16:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LoginScenario_VariousLocators]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping this scenario]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping this scenario
+	at com.company.pack.MainScripts.Delta.MultipleLoginActitime(Delta.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MultipleLoginActitime -->
+        <test-method status="FAIL" signature="quitApp(org.testng.ITestResult)[pri:0, instance:com.company.pack.MainScripts.Delta@6cc4c815]" name="quitApp" is-config="true" duration-ms="0" started-at="2016-09-11T11:16:36Z" finished-at="2016-09-11T11:16:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MultipleLoginActitime status=SKIP method=Delta.MultipleLoginActitime(java.lang.String, java.lang.String)[pri:0, instance:com.company.pack.MainScripts.Delta@6cc4c815] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'USBLRPKATARIAS1', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 90134da1-7029-4578-abcf-8cec4e5c8ad4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'USBLRPKATARIAS1', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 90134da1-7029-4578-abcf-8cec4e5c8ad4
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
+	at com.company.pack.MainScripts.Delta.quitApp(Delta.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:703)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7056 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 25 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 40 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitApp -->
+        <test-method status="SKIP" signature="endFramework()[pri:0, instance:com.company.pack.MainScripts.Delta@6cc4c815]" name="endFramework" is-config="true" duration-ms="0" started-at="2016-09-11T11:16:42Z" finished-at="2016-09-11T11:16:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endFramework -->
+      </class> <!-- com.company.pack.MainScripts.Delta -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- Suite -->
+</testng-results>
